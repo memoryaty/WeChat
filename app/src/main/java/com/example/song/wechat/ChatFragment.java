@@ -35,7 +35,7 @@ public class ChatFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
+        dataBeanList = new ArrayList<>();
         getChatList();
 
         View lvrootview = inflater.inflate(R.layout.fragment_chat, null);
@@ -73,15 +73,15 @@ public class ChatFragment extends Fragment {
     }
 
     private void getChatList() {
-        dataBeanList = new ArrayList<>();
-        final DataBean dataBean = new DataBean();
         String url = "http://moryies.sinaapp.com/response.php";
+
         JsonObjectRequest jsRequest = new JsonObjectRequest(Request.Method.GET, url, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
                 Log.i("data", "begin get data");
                 Log.i("data", response.toString());
                 try {
+                    DataBean dataBean = new DataBean();
                     JSONArray jsonArray = response.getJSONArray("data");
                     for (int i = 0; i < jsonArray.length(); i++) {
                         JSONObject jsonObject = jsonArray.getJSONObject(i);
