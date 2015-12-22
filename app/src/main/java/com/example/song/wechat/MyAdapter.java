@@ -43,8 +43,8 @@ public class MyAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder viewHolder;
         if (convertView == null) {
-            convertView = mInflater.inflate(R.layout.list_item, null);
             viewHolder = new ViewHolder();
+            convertView = mInflater.inflate(R.layout.list_item, null);
             viewHolder.iconImg = (ImageView) convertView.findViewById(R.id.image);
             viewHolder.tvName = (TextView) convertView.findViewById(R.id.tv_chat_1);
             viewHolder.tvContent = (TextView) convertView.findViewById(R.id.tv_chat_2);

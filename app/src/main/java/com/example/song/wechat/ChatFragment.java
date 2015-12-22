@@ -48,19 +48,19 @@ public class ChatFragment extends Fragment {
             itemdata.add(map);
         }
 
-        getChatList();
-
         handler = new Handler(){
             @Override
             public void handleMessage(Message msg) {
-                dataBeanList = (List<DataBean>) msg.obj;
+//                dataBeanList = (List<DataBean>) msg.obj;
+                lv.setAdapter(new MyAdapter(getActivity().getApplicationContext(),
+                        (List<DataBean>) msg.obj));
             }
         };
 
 //        SimpleAdapter simpleAdapter = new SimpleAdapter(this.getActivity().getApplicationContext(),
 //                itemdata, R.layout.list_item, new String[]{"tv_chat_1", "tv_chat_2"},
 //                new int[]{R.id.tv_chat_1, R.id.tv_chat_2});
-        lv.setAdapter(new MyAdapter(getActivity().getApplicationContext(), dataBeanList));
+//        lv.setAdapter(new MyAdapter(getActivity().getApplicationContext(), dataBeanList));
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -81,9 +81,10 @@ public class ChatFragment extends Fragment {
                 Log.i("data", "begin get data");
                 Log.i("data", response.toString());
                 try {
-                    DataBean dataBean = new DataBean();
+                    DataBean dataBean;
                     JSONArray jsonArray = response.getJSONArray("data");
                     for (int i = 0; i < jsonArray.length(); i++) {
+                        dataBean = new DataBean();
                         JSONObject jsonObject = jsonArray.getJSONObject(i);
                         dataBean.setmImgUrl(jsonObject.getString("imageurl"));
                         dataBean.setmAge(jsonObject.getInt("age")+"");
