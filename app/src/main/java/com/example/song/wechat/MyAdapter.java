@@ -8,6 +8,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.android.volley.toolbox.ImageLoader;
+
 import org.w3c.dom.Text;
 
 import java.util.List;
@@ -17,8 +19,10 @@ import java.util.List;
  */
 public class MyAdapter extends BaseAdapter {
 
-    List<DataBean> mDataBeanList;
-    LayoutInflater mInflater;
+    private List<DataBean> mDataBeanList;
+    private LayoutInflater mInflater;
+    private String IMGPATH = "http://moryies.sinaapp.com/head/";
+
     public MyAdapter(Context context, List<DataBean> dataBeanList) {
         mInflater = LayoutInflater.from(context);
         this.mDataBeanList = dataBeanList;
@@ -54,7 +58,12 @@ public class MyAdapter extends BaseAdapter {
         }
 
         DataBean dataBean = mDataBeanList.get(position);
-        viewHolder.iconImg.setImageResource(R.mipmap.actionbar_add_icon);
+        ImageLoader imageLoader = new ImageLoader(MyApp.getRequestQueue(), new BitmapCache());
+        ImageLoader.ImageListener imageListener = imageLoader.getImageListener(viewHolder.iconImg,
+                R.mipmap.actionbar_add_icon, R.mipmap.actionbar_add_icon);
+        String imgurlstr = IMGPATH+dataBean.getmImgUrl();
+        imageLoader.get(imgurlstr, imageListener);
+//        viewHolder.iconImg.setImageResource(R.mipmap.actionbar_add_icon);
         viewHolder.tvName.setText(dataBean.getmName());
         viewHolder.tvContent.setText(dataBean.getmAge());
         return convertView;
