@@ -2,14 +2,14 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="60dp">
-    <ImageView
+    <com.facebook.drawee.view.SimpleDraweeView
         android:id="@+id/image"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignParentLeft="true"
-        android:layout_centerVertical="true"
         android:padding="5dp"
-        android:src="@mipmap/actionbar_icon"/>
+        android:background="#ffeeeeee"
+        android:scaleType="fitXY" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

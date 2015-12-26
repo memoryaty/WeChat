@@ -2,18 +2,18 @@
 <items version="2" >
 
     <item
+        jar="C:\android-sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="D:\source20150627\WeChat\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-fb30a7997375d7d71a6f5136a714a9d27c3ce4b0.jar" />
+    </item>
+    <item
         jar="D:\source20150627\WeChat\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.0 rc2"
         sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
         <dex dex="D:\source20150627\WeChat\app\build\intermediates\pre-dexed\debug\classes-aad5e08b6a6109b490f3144aae7f09b4a5503dc9.jar" />
-    </item>
-    <item
-        jar="D:\source20150627\WeChat\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.0 rc2"
-        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
-        <dex dex="D:\source20150627\WeChat\app\build\intermediates\pre-dexed\debug\classes-25621955a2afd2daef5842c72c62a43c69cae032.jar" />
     </item>
     <item
         jar="C:\Users\song\.gradle\caches\modules-2\files-2.1\com.mcxiaoke.volley\library\1.0.19\a8f23f65fc1e522ee4a1a697ee569901a46741fa\library-1.0.19.jar"
@@ -23,6 +23,20 @@
         <dex dex="D:\source20150627\WeChat\app\build\intermediates\pre-dexed\debug\library-1.0.19-0d693a58107ceccbec8602f826b3a67ce09aab32.jar" />
     </item>
     <item
+        jar="C:\Users\song\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.1.4\129874135e6081269ace2312092031558865de12\bolts-android-1.1.4.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="129874135e6081269ace2312092031558865de12">
+        <dex dex="D:\source20150627\WeChat\app\build\intermediates\pre-dexed\debug\bolts-android-1.1.4-4f2aa35687b201d165d0b4cbbc26d3ecd2bdbd30.jar" />
+    </item>
+    <item
+        jar="D:\source20150627\WeChat\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="D:\source20150627\WeChat\app\build\intermediates\pre-dexed\debug\classes-25621955a2afd2daef5842c72c62a43c69cae032.jar" />
+    </item>
+    <item
         jar="D:\source20150627\WeChat\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
         jumboMode="false"
         revision="23.0.0 rc2"
@@ -30,11 +44,39 @@
         <dex dex="D:\source20150627\WeChat\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-c8455a6e5905a0ea2175590423348a3d1bcf49d2.jar" />
     </item>
     <item
-        jar="C:\android-sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jar="D:\source20150627\WeChat\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline\0.8.1\jars\classes.jar"
         jumboMode="false"
         revision="23.0.0 rc2"
-        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
-        <dex dex="D:\source20150627\WeChat\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-fb30a7997375d7d71a6f5136a714a9d27c3ce4b0.jar" />
+        sha1="3836ecca4e31e18ea8fbae8e822d49777b0db4f7">
+        <dex dex="D:\source20150627\WeChat\app\build\intermediates\pre-dexed\debug\classes-2378ded98dbe0417ab1d919172235f6da6c31365.jar" />
+    </item>
+    <item
+        jar="D:\source20150627\WeChat\app\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\0.8.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="4af24c040b21980e0a80a505816c648e36705bd9">
+        <dex dex="D:\source20150627\WeChat\app\build\intermediates\pre-dexed\debug\classes-77631b1300ce3548e184f74c728e6a81a078e0c4.jar" />
+    </item>
+    <item
+        jar="D:\source20150627\WeChat\app\build\intermediates\exploded-aar\com.facebook.fresco\drawee\0.8.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="845a5b3a624946b2068963ba656c117fc453701c">
+        <dex dex="D:\source20150627\WeChat\app\build\intermediates\pre-dexed\debug\classes-e7c0c190783cef2f6261da19897558cbcd08305d.jar" />
+    </item>
+    <item
+        jar="D:\source20150627\WeChat\app\build\intermediates\exploded-aar\com.facebook.fresco\fresco\0.8.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="9178570a3a28c95fabd3bc746cd68efe99ad2b47">
+        <dex dex="D:\source20150627\WeChat\app\build\intermediates\pre-dexed\debug\classes-a576f6c3fd730c8d8313d24bdff410504373345e.jar" />
+    </item>
+    <item
+        jar="C:\Users\song\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="D:\source20150627\WeChat\app\build\intermediates\pre-dexed\debug\library-2.4.0-49743fb3f4fbe376ba1f8ee1a880616a2443a372.jar" />
     </item>
 
 </items>

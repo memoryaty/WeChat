@@ -1,6 +1,7 @@
 package com.example.song.wechat;
 
 import android.content.Context;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -58,12 +59,10 @@ public class MyAdapter extends BaseAdapter {
         }
 
         DataBean dataBean = mDataBeanList.get(position);
-        ImageLoader imageLoader = new ImageLoader(MyApp.getRequestQueue(), new BitmapCache());
-        ImageLoader.ImageListener imageListener = imageLoader.getImageListener(viewHolder.iconImg,
-                R.mipmap.actionbar_add_icon, R.mipmap.actionbar_add_icon);
         String imgurlstr = IMGPATH+dataBean.getmImgUrl();
-        imageLoader.get(imgurlstr, imageListener);
-//        viewHolder.iconImg.setImageResource(R.mipmap.actionbar_add_icon);
+        Uri uri = Uri.parse(imgurlstr);
+        viewHolder.iconImg.setImageResource(R.mipmap.actionbar_add_icon);
+        viewHolder.iconImg.setImageURI(uri);
         viewHolder.tvName.setText(dataBean.getmName());
         viewHolder.tvContent.setText(dataBean.getmAge());
         return convertView;
